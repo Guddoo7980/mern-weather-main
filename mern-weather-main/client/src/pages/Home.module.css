@@ -1,0 +1,44 @@
+.homeContainer {
+  height: 80vh;
+}
+
+.background {
+  height: 100%;
+  opacity: 0.75;
+  background-size: 100%100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.weatherContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherConditions {
+  width: 60%;
+  margin-top: 2.5rem;
+  box-shadow: rgb(0 0 0 / 60%) 5px 5px 10px;
+  border-radius: 8px 8px 8px 8px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    height: 90vh;
+  }
+  .background {
+    background-size: cover !important;
+    background-position: initial !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .background {
+    margin-top: 3rem;
+  }
+  .weatherConditions {
+    width: 80%;
+  }
+}

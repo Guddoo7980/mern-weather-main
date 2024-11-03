@@ -1,0 +1,111 @@
+.container {
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.mainCity {
+  display: flex;
+  align-items: center;
+}
+
+.favouritesContainer {
+  display: flex;
+}
+
+.favourites {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.favouriteButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.faHeart {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.favouriteCity {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.28571429rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem 0.75rem;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+.favouriteButton:hover {
+  backdrop-filter: brightness(80%);
+}
+
+.favouriteCity:hover {
+  backdrop-filter: brightness(80%);
+}
+
+.favouritesName {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .favouriteButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .favouriteCity {
+    padding: 0.5rem 1rem 0.5rem;
+  }
+  .favourites {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .favouriteButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .favouriteCity {
+    padding: 0.25rem 0.5rem 0.25rem;
+  }
+  .favourites {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .favouritesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+  }
+  .container {
+    margin: 1rem 0rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .favouriteButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .favouriteCity {
+    padding: 0.25rem 0.5rem 0.25rem;
+  }
+  .favourites {
+    margin-bottom: 0.25rem;
+  }
+}
